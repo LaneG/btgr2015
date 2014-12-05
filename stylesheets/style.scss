@@ -1,0 +1,244 @@
+$bt-blue: #2881c7;
+$bt-green: #00CDBD;
+$bt-black: #4C4845;
+$bk-ltblue: #F2F8FC;
+
+
+@font-face {  font-family: 'Bebas'; src: url('fonts/bebas/BebasNeue_Regular.otf') format("truetype"); }
+
+html {
+	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
+}
+body { 
+	margin:0;
+	padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-family: Lato;
+}
+
+h1 {
+   font-size: 3.6rem;
+   font-family: Bebas;
+   color: $bt-blue;
+   &.white {
+   	color: #fff;
+   }
+}
+
+h2 {
+	font-size: 2.4rem;
+	color: $bt-blue;
+}
+
+h4 {
+	font-size: 2.4rem;
+	font-family: bebas;
+	text-align: left;
+	color: #fff;
+}
+
+h5 {
+	font-size: 4.8rem;
+	font-family: bebas;
+	text-align: left;
+	color: $bt-green;
+}
+
+h6 {
+	font-size: 2.4rem;
+	font-family: bebas;
+	text-align: left;
+	color: #fff;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: $bt-black;
+  letter-spacing: .05rem;
+  font-weight: 500;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+	.full-width {
+		width: 100%;
+		margin: 0 1.06%;
+		float: left;
+		display: block;
+	}
+	.col-8 {
+		width: 63.82%;
+		margin: 0 1.06%;
+		float: left;
+		display: block;
+	}
+	.col-6 {
+		width: 47.87%;
+		margin: 0 1.06%;
+		float: left;
+		display: block;
+	}
+	.col-4 {
+		width: 31.91%;
+		margin: 0 1.06%;
+		float: left;
+		display: block;
+	}
+	.col-2 {
+		width: 22.87%;
+		margin: 0 1.06%;
+		float: left;
+		display: block;
+	}
+	.nav-width {
+		width: auto;
+		float: right;
+		margin: 0 0;
+	}
+}
+
+header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 80px;
+	z-index:9999;
+	background: $bt-blue;
+	ul {
+		margin-top: 0px;
+		float: right;
+		display: inline-block;
+		li {
+			display: inline-block;
+			color: #fff;
+			padding: 0px 15px;
+			text-align: center;
+			font-family: Bebas;
+			font-size: 2.4rem;
+			color: #FFFFFF;
+			line-height: 8.0rem;
+		}
+	}
+}
+
+/*---------   PARALLAX   ---------*/
+.slide {
+  position: relative;
+  padding: 50px 10%;
+  min-height: 5vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.title {
+  // width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 0% / cover;  
+}
+
+#title {
+  background-image: url("../images/grandrapids.jpg");
+   background-attachment: fixed;  
+}
+
+#slide1 {
+	height: 350px;
+	:before {
+  		background:#fff;
+  		transform: translateZ(-1px) scale(2);
+		 z-index:-1;
+	}
+}
+
+#slide2 {
+	height: 530px;
+	background: $bk-ltblue;
+	background-attachment: fixed;
+}
+
+#slide3:before {
+  background-image: url("http://lorempixel.com/output/abstract-q-c-640-480-5.jpg");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide4 {
+  background: #222;
+}
+#slide5 {
+  background: $bk-ltblue;
+  background-attachment: fixed;
+}
+
+#slide6:before {
+  background-image: url("http://lorempixel.com/output/abstract-q-c-640-480-5.jpg");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide7 {
+  background: $bk-ltblue;
+  background-attachment: fixed;
+}
+
+#slide8:before {
+  background-image: url("http://lorempixel.com/output/abstract-q-c-640-480-5.jpg");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide9 {
+  background: $bk-ltblue;
+  background-attachment: fixed;
+}
