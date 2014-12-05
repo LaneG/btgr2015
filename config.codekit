@@ -11,6 +11,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/_MG_6804.jpg": {
+		"fileType": 16384,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28278,
+		"inputAbbreviatedPath": "\/images\/_MG_6804.jpg",
+		"outputAbbreviatedPath": "\/images\/_MG_6804.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/grandrapids.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -18,6 +29,28 @@
 		"initialSize": 122174,
 		"inputAbbreviatedPath": "\/images\/grandrapids.jpg",
 		"outputAbbreviatedPath": "\/images\/grandrapids.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/images\/kendall-saci3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19741,
+		"inputAbbreviatedPath": "\/images\/kendall-saci3.jpg",
+		"outputAbbreviatedPath": "\/images\/kendall-saci3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/theteam.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17492,
+		"inputAbbreviatedPath": "\/images\/theteam.jpg",
+		"outputAbbreviatedPath": "\/images\/theteam.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1

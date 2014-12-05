@@ -31,7 +31,9 @@
     </header>
     <div id="title" class="slide header">
       <div class="container">
-        <div class="logo"></div>
+        <div class="logo">
+          <img src="images/Logo.svg">
+        </div>
         <br>
         <h1 class="white">Grand Rapids summit</h1>
         <h6>June 13-14, 2015</h6>
@@ -55,7 +57,7 @@
           <p>Balanced Team is a global movement of people who value multi-disciplinary collaboration and iterative delivery focused on customer value as a source for innovation. We’re a self-organizing group that learns from each other as we explore processes and methodologies to do good work with happy teams.</p>
         </div>
         <div class="col-6">
-          img
+          <img src="images/theteam.jpg" alt="The Balanced Team" class="aboutimage">
         </div>
         <div class="full-width">
           <p>We welcome people from many disciplines -- design, development, testing, product management, marketing and sales, to name a few. If you’re interested in product development, lean startup, agile UX, devops, and anything else that values multi-disciplinary collaboration and iterative delivery of value.</p>
@@ -71,31 +73,127 @@
       </div>
     </div>
 
-    <div id="slide4" class="slide">
+<div id="slide4" class="mapslide">
+     <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script> 
+         <script> 
+            google.maps.event.addDomListener(window, 'load', init);
+            var map;
+            function init() {
+                var mapOptions = {
+                    center: new google.maps.LatLng(42.96786,-85.678409),
+                    zoom: 15,
+                    zoomControl: true,
+                    zoomControlOptions: {
+                        style: google.maps.ZoomControlStyle.DEFAULT,
+                    },
+                    disableDoubleClickZoom: true,
+                    mapTypeControl: true,
+                    mapTypeControlOptions: {
+                        style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+                    },
+                    scaleControl: true,
+                    scrollwheel: false,
+                    panControl: true,
+                    streetViewControl: true,
+                    draggable : true,
+                    overviewMapControl: true,
+                    overviewMapControlOptions: {
+                        opened: false,
+                    },
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    
+                }
+                var mapElement = document.getElementById('s');
+                var map = new google.maps.Map(mapElement, mapOptions);
+                var locations = [
+        ['Kendall College of Art and Design', 'undefined', 'undefined', 'undefined', 'undefined', 42.96591, -85.66830499999999, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png']
+                ];
+                for (i = 0; i < locations.length; i++) {
+              if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+              if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+              if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+                   if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+                   if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+                    marker = new google.maps.Marker({
+                        icon: markericon,
+                        position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                        map: map,
+                        title: locations[i][0],
+                        desc: description,
+                        tel: telephone,
+                        email: email,
+                        web: web
+                    });
+        link = '';     }
+
+        }
+        </script>
+        
+
+<div id='s'></div>
       <div class="container">
-        <h1>map</h1>
-        <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+        
       </div>
     </div>
 
     <div id="slide5" class="slide">
       <div class="container">
-        <h1>GR Locaiton</h1>
-        <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+        <h1 class="full-width">GR Locaiton</h1>
+        <div class="col-6">
+          <img src="images/kendall.jpg" alt="Kendall School of Art and Design">
+          <h2>Kendall College of Art and Design</h2>
+            <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in.</p>
+        </div>
+        <div class="col-6">
+          <img src="images/downtown.jpg" alt="Downtown Grand Rapids">
+          <h2>Kendall College of Art and Design</h2>
+            <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+        </div>     
       </div>
     </div>
 
-    <div id="slide6" class="slide">
+    <div id="slide6" class="slide"> 
       <div class="container">
-        <h1>Sponsors</h1>
-        <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+        <div class="full-width">
+          <h1>Our Sponsors</h1>
+          <p>Thank you to the companies below for their generous support of Balanced Team! If you would like to learn about sponsorship opportunities for the future please talk to us.</p>
+          <h2>Gold Level</h2>
+        </div>
+          <div class="col-5"><img src="images/visualhero.svg" class=" vhlogo"></div>
+          <div class="col-3"><img src="images/atomicobject.svg" class=" "></div>
+          <div class="col-3"><img src="images/visualhero.svg"  class=" vhlogo"></div>
+        <br class="clear">
+          <div class="full-width"> 
+            <h2 class="spaceing">Silver Level</h2>
+          </div>
+          <div class="col-2"><img src="images/atomicobject.svg" class="smlogo"></div>
+          <div class="col-logo"><img src="images/atomicobject.svg" class="smlogo"></div>
+          <div class="col-logo"><img src="images/atomicobject.svg" class="smlogo"></div>
+          <div class="col-logo"><img src="images/atomicobject.svg" class="smlogo"></div>
+          <div class="col-logo"><img src="images/atomicobject.svg" class="smlogo"></div>
+        <br class="clear spacer">
+          <div class="full-width">
+            <h2>Why Support Ballanced Team?</h2>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li><span class="text">Contribute to the exploration of new methods for collaboration in product and service design and development.</span></li>
+              <li><span class="text">Connect with a fascinating set of individuals from varied disciplines and companies from startups to enterprise.</span></li>
+            </ul>
+          </div>
+           <div class="col-6">
+            <ul>
+              <li><span class="text">Gain new perspective and fresh practices that you can immediately bring to bear in your organization. &emsp; </span></li>
+              <li><span class="text">Raise your company’s profile among industry innovators and leaders in the community.</span></li>
+            </ul>
+          </div>
       </div>
     </div>
 
     <div id="slide7" class="slide">
       <div class="container">
         <h1>Download</h1>
-        <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+        <p>To get involved or to learn more, contact Rick at 1.616.460.2606  or sponsorships@balancedteam.org</p>
       </div>
     </div>
 
