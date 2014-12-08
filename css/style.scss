@@ -1,0 +1,412 @@
+$bt-blue: #2881c7;
+$bt-green: #00CDBD;
+$bt-yellow: #FAB516;
+$bt-black: #4C4845;
+$bk-ltblue: #F2F8FC;
+$bk-yellow: #FEF7E7;
+
+@font-face {  font-family: 'Bebas'; src: url('fonts/bebas/BebasNeue_Regular.otf') format("truetype"); }
+
+html {
+	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
+}
+body { 
+	margin:0;
+	padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-family: Lato;
+}
+a {
+	color:$bt-green;
+}
+
+h1 {
+   font-size: 3.6rem;
+   font-family: Bebas;
+   color: $bt-blue;
+   margin: 0 0;
+   &.white {
+   	color: #fff;
+   }
+}
+
+h2 {
+	margin: 0 0;
+	font-size: 2.4rem;
+	color: $bt-blue;
+}
+
+h4 {
+	margin: 0 0;
+	font-size: 2.4rem;
+	font-family: bebas;
+	text-align: left;
+	color: #fff;
+}
+
+h5 {
+	margin: 5px 0;
+	font-size: 4.8rem;
+	font-family: bebas;
+	text-align: left;
+	color: $bt-green;
+}
+
+h6 {
+	margin: 0 0;
+	font-size: 2.4rem;
+	font-family: bebas;
+	text-align: left;
+	color: #fff;
+}
+
+p {
+	margin: 10px 0;
+ 	font-size: 1.8rem;
+ 	line-height: 2.8rem;
+ 	color: $bt-black;
+ 	letter-spacing: .05rem;
+ 	font-weight: 500;
+}
+
+.clear {
+	clear: both;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+	.full-width {
+		width: 100%;
+		margin: 0 1.06%;
+		float: left;
+		display: block;
+	}
+	.col-8 {
+		width: 63.82%;
+		margin: 0 1.06%;
+		float: left;
+		display: block;
+	}
+	.col-6 {
+		width: 47.87%;
+		margin: 0 1.06%;
+		float: left;
+		display: block;
+	}
+	.col-5 {
+		width: 22.87%;
+		margin: 0 1.06% 0 15.58%;
+		float: left;
+		display: block;
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.col-4 {
+		width: 31.91%;
+		margin: 0 1.06%;
+		float: left;
+		display: block;
+	}
+	.col-3 {
+		width: 22.87%;
+		margin: 0 1.06%;
+		float: left;
+		display: block;
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.footer-col-3 {
+		width: 22.87%;
+		margin: 0 1.06%;
+		float: right;
+		display: block;
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.nav-width {
+		width: auto;
+		float: right;
+		margin: 0 0;
+	}
+	.col-2 {
+		width: 14.52%;
+		margin: 0 1.06%;
+		float: left;
+		display: block;
+	}
+	.offset-col-2 {
+		margin-left: 0 15.58%;
+	}
+	.col-logo {
+		width: 14.52%;
+		margin: 0 1.06% 0 5.26%;
+		float: left;
+		display: block;
+	}
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	z-index:9999;
+	background: $bt-blue;
+	ul {
+		margin-top: 0px;
+		float: right;
+		display: inline-block;
+		li {
+			display: inline-block;
+			padding: 0px 15px;
+			text-align: center;
+			font-family: Bebas;
+			font-size: 2.4rem;
+			color: #FFFFFF;
+			line-height: 7.0rem;
+			a{
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+	}
+}
+.navbarlogo {
+	img {
+		// opacity: 0;
+		float: left;
+		padding: 6px 0 0 10px;
+		width: 60px;
+	}
+}
+/*---------   Slides   ---------*/
+.slide {
+  position: relative;
+  padding: 60px 10%;
+  // min-height: 5vh;
+  width: 100vw;
+  box-sizing: border-box;
+  // box-shadow: 0 -1px 10px rgba(0, 0, 0, .3);
+	transform-style: inherit;
+}
+
+// img {
+//   position: absolute;
+//   top: 50%;
+//   left: 35%;
+//   width: 320px;
+//   height: 240px;
+//   transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+//   padding: 10px;
+//   border-radius: 5px;
+//   background: rgba(240,230,220, .7);
+//   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+// }
+
+img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+.slide:before {
+  content: "";
+  // position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.title {
+  // width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 0% / cover;  
+}
+
+#title {
+  background-image: url("../images/grandrapids.jpg");
+   background-attachment: fixed;  
+   background-position:30% -180px;
+   height: 600px;
+}
+
+#slide1 {
+	height: 350px;
+	:before {
+  		background:#fff;
+  		transform: translateZ(-1px) scale(2);
+		 z-index:-1;
+	}
+}
+
+.logo {
+	padding-top: 120px;
+}
+
+#slide2 {
+	height: 480px;
+	background: $bk-ltblue;
+	background-attachment: fixed;
+}
+
+.aboutimage {
+	margin-top: 30px;
+}
+
+#slide3:before {
+  background-image: url("");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide4 {
+  background: $bk-yellow;
+}
+/*---------- GOOGLE MAP STYLES ----------*/
+	#s {
+	    height:400px;
+	    width:100%;
+	}
+	.gm-style-iw * {
+	    display: block;
+	    width: 100%;
+	}
+	.gm-style-iw h4, .gm-style-iw p {
+	    margin: 0;
+	    padding: 0;
+	}
+	.gm-style-iw a {
+	    color: #4272db;
+	}
+
+#slide5 {
+  background: #FEF7E7;
+  background-attachment: fixed;
+  height: 700px;
+  h1 {
+  	padding-bottom: 10px;
+  }
+  h2 {
+  	padding-top: 20px;
+  }
+}
+
+#slide6 {
+	height: 820px;
+	:before {
+	  background:#fff;
+	  transform: translateZ(-1px) scale(2);
+	  z-index:-1;
+	}
+	h2 {
+		padding-top: 25px;
+		padding-bottom: 10px;
+	}
+	ul {
+		margin-top: 5px;
+		font-size: 1.8rem;
+		list-style-type: square;
+		color: $bt-yellow;
+		li {
+			padding-bottom: 5px;
+		}
+	}
+}
+
+.text {
+	color: #4C4845;
+}
+.splogo {
+	height:140px;
+}
+img.smlogo {
+		width: 75%;
+		margin: 0 28%;
+}
+.vhlogo {
+	padding-top: 53px;
+
+}
+
+
+#slide7 {
+  background: $bk-yellow;
+  background-attachment: fixed;
+  z-index: 1;
+  p {
+  	display: inline-block;
+  	width: 63.82%;
+	margin: 0 1.06%; 
+  }
+}
+.downloadicon {
+	margin: 13px 13px 13px 13px ;
+}
+
+.button {
+	background-color: $bt-yellow;
+	display: inline-block;
+	img {
+		float: left;
+	}
+	.buttontext {
+		padding: 12px 12px 7px 0px;
+		color: #fff;
+		float: left;
+		font-size: 2.4rem;
+	}
+}
+
+#slide8:before {
+  background-image: url("");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide9 {
+  background: $bt-blue;
+  color: #fff;
+  height: 250px;
+  .footertitle {
+  	font-size: 2.4rem;
+  }
+  ul {
+  	margin: 0;
+  	padding: 0;
+  	list-style-type: none;
+  	li {
+  		font-size: 1.4rem;
+  		padding-bottom: 12px;
+  		a {
+  			color: #fff;
+  		}
+  	}
+  }
+}

@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>  
     @import url(http://fonts.googleapis.com/css?family=Lato);
 
     <!--[if lt IE 9]>
@@ -18,13 +17,16 @@
   <body>
     <header>
       <div class="container">
+        <div class="navbarlogo">
+          <img src="images/Logo.svg">
+        </div>
         <div class="nav-width">
           <ul>
-            <li>About</li>
-            <li>Speakers</li>
-            <li>Location</li>
-            <li>Sponsors</li>
-            <li>Register</li>
+            <li><a href="#slide2">About</a></li>
+            <li><a href="#slide3">Speakers</a></li>
+            <li><a href="#slide4">Location</a></li>
+            <li><a href="#slide6">Sponsors</a></li>
+            <li><a href="#slide8">Register</a></li>
           </ul>
         </div>
       </div>
@@ -138,7 +140,7 @@
 
     <div id="slide5" class="slide">
       <div class="container">
-        <h1 class="full-width">GR Locaiton</h1>
+        <h1 class="full-width">City of Grand Rapids</h1>
         <div class="col-6">
           <img src="images/kendall.jpg" alt="Kendall School of Art and Design">
           <h2>Kendall College of Art and Design</h2>
@@ -192,8 +194,12 @@
 
     <div id="slide7" class="slide">
       <div class="container">
-        <h1>Download</h1>
-        <p>To get involved or to learn more, contact Rick at 1.616.460.2606  or sponsorships@balancedteam.org</p>
+        <a href="files/2015-BT-sponsor-info.pdf" target="_blank"><div class="button">
+          <img src="images/download.svg" class="downloadicon">
+          <h1 class="buttontext">Download Sponsorship Pack</h1>
+        </div></a>
+        <p>To get involved or to learn more, contact Rick at <a href="tel://1-616-460-2606">616.460.2606</a>  or 
+        <a href="mailto:sponsorships@balancedteam.org">sponsorships@balancedteam.org</a></p>
       </div>
     </div>
 
@@ -206,10 +212,41 @@
 
     <div id="slide9" class="slide">
       <div class="container">
-        <h1>footer</h1>
-        <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+        <a href="" target="_blank"><div class="button">
+          <img src="images/mail.svg" class="downloadicon">
+          <h1 class="buttontext">Sign Up For Email Updates</h1>
+        </div></a>
+        <div class="footer-col-3">
+          <ul>
+            <li class="footertitle">About Us</li>
+            <li><a>History</a></li>
+            <li><a href="http://www.balancedteam.org/balancedteamsf2013">2013 Summit</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-3">
+          <ul>
+            <li class="footertitle">Connect With Us</li>
+            <li><a href="http://www.balancedteam.org">Balanced Team</a></li>
+            <li><a href="https://www.twitter.com/balancedteam/">Twitter</a></li>
+            <li><a href="https://www.flickr.com/photos/balancedteam/">Flicker</a></li>
+            <li><a href="http://lanyrd.com/2013/balancedteam/">Lanyrd</a></li>
+          </ul>
+        </div>
       </div>
     </div>
    
   </body>
+<script type="text/javascript">
+(function($) {          
+    $(document).ready(function(){                    
+        $(window).scroll(function(){                          
+            if ($(this).scrollTop() > 300) {
+                $('.navbarlogo').fadeIn(500);
+            } else {
+                $('.navbarlogo').fadeOut(500);
+            }
+        });
+    });
+})(jQuery);
+</script>
 </html>

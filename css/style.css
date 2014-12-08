@@ -15,6 +15,9 @@ body {
   overflow-x: hidden;
   font-family: Lato; }
 
+a {
+  color: #00CDBD; }
+
 h1 {
   font-size: 3.6rem;
   font-family: Bebas;
@@ -36,7 +39,7 @@ h4 {
   color: #fff; }
 
 h5 {
-  margin: 0 0;
+  margin: 5px 0;
   font-size: 4.8rem;
   font-family: bebas;
   text-align: left;
@@ -99,6 +102,14 @@ p {
     .container .col-3 img {
       display: block;
       margin: 0 auto; }
+  .container .footer-col-3 {
+    width: 22.87%;
+    margin: 0 1.06%;
+    float: right;
+    display: block; }
+    .container .footer-col-3 img {
+      display: block;
+      margin: 0 auto; }
   .container .nav-width {
     width: auto;
     float: right;
@@ -117,10 +128,10 @@ p {
     display: block; }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
-  height: 80px;
+  height: 60px;
   z-index: 9999;
   background: #2881c7; }
   header ul {
@@ -129,22 +140,27 @@ header {
     display: inline-block; }
     header ul li {
       display: inline-block;
-      color: #fff;
       padding: 0px 15px;
       text-align: center;
       font-family: Bebas;
       font-size: 2.4rem;
       color: #FFFFFF;
-      line-height: 8.0rem; }
+      line-height: 7.0rem; }
+      header ul li a {
+        color: #fff;
+        text-decoration: none; }
 
-/*---------   PARALLAX   ---------*/
+.navbarlogo img {
+  float: left;
+  padding: 6px 0 0 10px;
+  width: 60px; }
+
+/*---------   Slides   ---------*/
 .slide {
   position: relative;
-  padding: 50px 10%;
-  min-height: 5vh;
+  padding: 60px 10%;
   width: 100vw;
   box-sizing: border-box;
-  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.3);
   transform-style: inherit; }
 
 img:last-of-type {
@@ -152,7 +168,6 @@ img:last-of-type {
 
 .slide:before {
   content: "";
-  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -178,7 +193,8 @@ img:last-of-type {
 #title {
   background-image: url("../images/grandrapids.jpg");
   background-attachment: fixed;
-  height: 580px; }
+  background-position: 30% -180px;
+  height: 600px; }
 
 #slide1 {
   height: 350px; }
@@ -191,15 +207,15 @@ img:last-of-type {
   padding-top: 120px; }
 
 #slide2 {
-  height: 460px;
+  height: 480px;
   background: #F2F8FC;
   background-attachment: fixed; }
 
 .aboutimage {
-  margin-top: 25px; }
+  margin-top: 30px; }
 
 #slide3:before {
-  background-image: url("http://lorempixel.com/output/abstract-q-c-640-480-5.jpg");
+  background-image: url("");
   transform: translateZ(-1px) scale(2);
   z-index: -1; }
 
@@ -225,14 +241,14 @@ img:last-of-type {
 #slide5 {
   background: #FEF7E7;
   background-attachment: fixed;
-  height: 660px; }
+  height: 700px; }
   #slide5 h1 {
     padding-bottom: 10px; }
   #slide5 h2 {
     padding-top: 20px; }
 
 #slide6 {
-  height: 810px; }
+  height: 820px; }
   #slide6 :before {
     background: #fff;
     transform: translateZ(-1px) scale(2);
@@ -262,14 +278,45 @@ img.smlogo {
   padding-top: 53px; }
 
 #slide7 {
-  background: #F2F8FC;
-  background-attachment: fixed; }
+  background: #FEF7E7;
+  background-attachment: fixed;
+  z-index: 1; }
+  #slide7 p {
+    display: inline-block;
+    width: 63.82%;
+    margin: 0 1.06%; }
+
+.downloadicon {
+  margin: 13px 13px 13px 13px; }
+
+.button {
+  background-color: #FAB516;
+  display: inline-block; }
+  .button img {
+    float: left; }
+  .button .buttontext {
+    padding: 12px 12px 7px 0px;
+    color: #fff;
+    float: left;
+    font-size: 2.4rem; }
 
 #slide8:before {
-  background-image: url("http://lorempixel.com/output/abstract-q-c-640-480-5.jpg");
+  background-image: url("");
   transform: translateZ(-1px) scale(2);
   z-index: -1; }
 
 #slide9 {
-  background: #F2F8FC;
-  background-attachment: fixed; }
+  background: #2881c7;
+  color: #fff;
+  height: 250px; }
+  #slide9 .footertitle {
+    font-size: 2.4rem; }
+  #slide9 ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+    #slide9 ul li {
+      font-size: 1.4rem;
+      padding-bottom: 12px; }
+      #slide9 ul li a {
+        color: #fff; }
