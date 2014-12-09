@@ -161,8 +161,7 @@ header {
   position: relative;
   padding: 60px 10%;
   width: 100%;
-  box-sizing: border-box;
-  transform-style: inherit; }
+  box-sizing: border-box; }
 
 .slide:before {
   content: "";
@@ -192,7 +191,8 @@ header {
   background-image: url("../images/grandrapids.jpg");
   background-attachment: fixed;
   background-position: 30% 0px;
-  height: 650px; }
+  height: 650px;
+  background-size: 100%; }
 
 #slide1 {
   height: 350px; }
@@ -325,6 +325,7 @@ img.smlogo {
       #slide9 ul li a {
         color: #fff; }
 
+/*--------- Media Queries ----------*/
 @media (min-width: 700px) and (max-width: 870px) {
   #slide1 {
     height: 430px; }
@@ -346,7 +347,12 @@ img.smlogo {
     padding-top: 45px; }
 
   .aologo {
-    width: 100px; } }
+    width: 100px; }
+
+  #title {
+    background-position-x: 50%;
+    background-size: 110%; } }
+/*----- iPhone -----*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   html {
     font-size: 130%;
@@ -367,7 +373,9 @@ img.smlogo {
 
   #title {
     background: cover;
-    height: 800px; }
+    height: 800px;
+    background-size: 150%;
+    background-position-x: 10%; }
 
   .container {
     max-width: 940px;
