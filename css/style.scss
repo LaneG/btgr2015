@@ -79,7 +79,7 @@ p {
 }
 
 .container {
-	width: 940px;
+	max-width: 940px;
 	margin: 0 auto;
 	.full-width {
 		width: 100%;
@@ -158,19 +158,21 @@ p {
 }
 
 header {
+
 	position: fixed;
 	top: 0;
 	width: 100%;
 	height: 60px;
 	z-index:9999;
 	background: $bt-blue;
+	-webkit-transform: translateZ(0);
 	ul {
 		margin-top: 0px;
 		float: right;
 		display: inline-block;
 		li {
 			display: inline-block;
-			padding: 0px 15px;
+			padding: 0px 30px 0 0;
 			text-align: center;
 			font-family: Bebas;
 			font-size: 2.4rem;
@@ -196,7 +198,7 @@ header {
   position: relative;
   padding: 60px 10%;
   // min-height: 5vh;
-  width: 100vw;
+  width: 100%;
   box-sizing: border-box;
   // box-shadow: 0 -1px 10px rgba(0, 0, 0, .3);
 	transform-style: inherit;
@@ -215,9 +217,7 @@ header {
 //   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 // }
 
-img:last-of-type {
-  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
-}
+
 
 .slide:before {
   content: "";
@@ -253,8 +253,8 @@ img:last-of-type {
 #title {
   background-image: url("../images/grandrapids.jpg");
    background-attachment: fixed;  
-   background-position:30% -180px;
-   height: 600px;
+   background-position:30% 0px;
+   height: 650px;
 }
 
 #slide1 {
@@ -271,7 +271,7 @@ img:last-of-type {
 }
 
 #slide2 {
-	height: 480px;
+	height: 520px;
 	background: $bk-ltblue;
 	background-attachment: fixed;
 }
@@ -354,7 +354,9 @@ img.smlogo {
 	padding-top: 53px;
 
 }
-
+.grimg {
+	width:100%;
+}
 
 #slide7 {
   background: $bk-yellow;
@@ -367,6 +369,10 @@ img.smlogo {
   }
 }
 .downloadicon {
+	margin: 13px 13px 13px 13px ;
+}
+
+.mailicon {
 	margin: 13px 13px 13px 13px ;
 }
 
@@ -390,6 +396,7 @@ img.smlogo {
   z-index:-1;
 }
 
+
 #slide9 {
   background: $bt-blue;
   color: #fff;
@@ -409,4 +416,221 @@ img.smlogo {
   		}
   	}
   }
+}
+
+@media (min-width: 700px) and (max-width: 870px){
+#slide1 {
+	height: 430px;
+}
+#slide2 {
+	height: 680px;
+}
+#slide6 {
+	height: 890px;
+}
+#slide9 {
+	height: 320px;
+}
+
+.footer-col-3 {
+	width:22%!important;
+}
+.vhlogo {
+	width: 100px;
+	padding-top: 45px;
+
+}
+.aologo {
+	width: 100px;
+}
+
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) {
+	html {
+	font-size: 130%;
+	-webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+	header {
+		height: 120px;
+		font-size: 1.5rem;
+		margin: 0;
+		line-height: 0.8rem;
+	}
+	.navbarlogo {
+		opacity: 0;
+		display: none!important;
+	}
+	#title {
+   background: cover;
+   height: 800px;
+
+}
+
+.container {
+	max-width: 940px;
+	margin: 0 auto;
+	.full-width, .col-8,.col-6 ,.col-5 ,.col-4 ,.col-3 , {
+		width: 100%;
+		margin: 0 1.06%;
+		float: left;
+		display: block;
+	}
+	
+	.footer-col-3 {
+		width: 47.88%;
+		margin: 0 1.06%;
+		float: right;
+		display: block;
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.nav-width {
+		width: auto;
+		float: right;
+		margin: 0 0;
+	}
+	.col-2 {
+		// width: 47.88%;
+		width: 47.88%;
+		margin: 0 1.06%;
+		float: left;
+		display: block;
+	}
+	.offset-col-2 {
+		margin: 0 1.06%;
+	}
+	.col-logo {
+		width: 47.88%;
+		margin: 0 1.06% 0 1.06%;
+		float: left;
+		display: block;
+	}
+}
+
+.logo {
+	img {
+		width: 390px;
+	}
+}
+
+.slide {
+  position: relative;
+  padding: 130px 10%;
+  // min-height: 5vh;
+  width: 100%;
+  box-sizing: border-box;
+  // box-shadow: 0 -1px 10px rgba(0, 0, 0, .3);
+	transform-style: inherit;
+}
+
+#slide1 {
+	height: 990px;
+}
+#slide2 {
+	height: 1690px;
+	.aboutimage {
+	margin-top: 30px;
+	width:100%;
+	ul {
+		margin-bottom: 0px;
+		font-size: 1.8rem;
+		list-style-type: square;
+		color: $bt-yellow;
+		li {
+			margin-top: 5px;
+			padding-bottom: 5px;
+		}
+	}
+}
+}
+#slide5 {
+	height: 2220px;
+}
+#slide6 {
+	height: 2990px;
+}
+#slide7 {
+	p {
+		width: 100%;
+	}
+}
+.grimg {
+width:100%;
+}
+.splogo {
+	height:140px;
+}
+img.smlogo {
+		width: 75%;
+		margin: 0 28%;
+}
+
+.vhlogo {
+	width: 350px;
+}
+.aologo {
+	width: 350px;
+	padding-top: 35px;
+}
+
+.button {
+	background-color: $bt-yellow;
+	display: inline-block;
+	width:100%;
+	margin: 10px 0;
+	img {
+		float: left;
+		width: 55px;
+	}
+	.buttontext {
+		padding: 12px 12px 7px 0px;
+		color: #fff;
+		float: left;
+		font-size: 3.6rem;
+	}
+}
+#slide9 {
+	height:600px;
+	.mailicon {
+		width: 70px;
+	}
+}
+
+ul {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	li {
+		padding: 10px 0;
+	}
+}
+	
+
+
+}
+
+@media (min-width: 1000px) and (min-width: 1100px){
+#title {
+   background-position:30% -50px;
+}
+}
+
+@media (min-width: 1101px) and (min-width: 1300px){
+#title {
+   background-position:30% -140px;
+}
+}
+
+@media (min-width: 1301px) {
+#title {
+   background-position:30% -240px;
+}
 }
