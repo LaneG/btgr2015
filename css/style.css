@@ -31,6 +31,13 @@ h2 {
   font-size: 2.4rem;
   color: #2881c7; }
 
+h3 {
+  margin: 0 0;
+  font-size: 2.4rem;
+  line-height: 4.8rem;
+  font-family: bebas;
+  color: #4C4845; }
+
 h4 {
   margin: 0 0;
   font-size: 2.4rem;
@@ -62,6 +69,11 @@ p {
 
 .clear {
   clear: both; }
+
+.spacer {
+  height: 1px;
+  opacity: 0;
+  padding-top: 20px; }
 
 .container {
   max-width: 940px;
@@ -205,12 +217,14 @@ header {
   padding-top: 120px; }
 
 #slide2 {
-  height: 520px;
+  height: 570px;
   background: #F2F8FC;
   background-attachment: fixed; }
 
 .aboutimage {
-  margin-top: 30px; }
+  float: right;
+  max-width: 63.82%;
+  padding: 20px; }
 
 #slide3:before {
   background-image: url("");
@@ -239,7 +253,7 @@ header {
 #slide5 {
   background: #FEF7E7;
   background-attachment: fixed;
-  height: 700px; }
+  height: 960px; }
   #slide5 h1 {
     padding-bottom: 10px; }
   #slide5 h2 {
@@ -284,7 +298,7 @@ img.smlogo {
   z-index: 1; }
   #slide7 p {
     display: inline-block;
-    width: 63.82%;
+    width: 58%;
     margin: 0 1.06%; }
 
 .downloadicon {
@@ -295,7 +309,8 @@ img.smlogo {
 
 .button {
   background-color: #FAB516;
-  display: inline-block; }
+  display: inline-block;
+  border-radius: 2px; }
   .button img {
     float: left; }
   .button .buttontext {
@@ -323,7 +338,15 @@ img.smlogo {
       font-size: 1.4rem;
       padding-bottom: 12px; }
       #slide9 ul li a {
-        color: #fff; }
+        color: #fff;
+        text-decoration: none;
+        border: 0px;
+        border-bottom: 2px;
+        padding-bottom: 2px;
+        border-style: solid; }
+        #slide9 ul li a:hover {
+          color: #00CDBD;
+          border-color: #00CDBD; }
 
 /*--------- Media Queries ----------*/
 @media (min-width: 700px) and (max-width: 870px) {
@@ -331,7 +354,7 @@ img.smlogo {
     height: 430px; }
 
   #slide2 {
-    height: 680px; }
+    height: 730px; }
 
   #slide6 {
     height: 890px; }
@@ -409,6 +432,8 @@ img.smlogo {
       margin: 0 1.06% 0 1.06%;
       float: left;
       display: block; }
+    .container .col-6 {
+      margin-bottom: 25px; }
 
   .logo img {
     width: 390px; }
@@ -424,7 +449,7 @@ img.smlogo {
     height: 990px; }
 
   #slide2 {
-    height: 1690px; }
+    height: 1500px; }
     #slide2 .aboutimage {
       margin-top: 30px;
       width: 100%; }
@@ -438,7 +463,7 @@ img.smlogo {
           padding-bottom: 5px; }
 
   #slide5 {
-    height: 2220px; }
+    height: 3355px; }
 
   #slide6 {
     height: 2990px; }
@@ -472,15 +497,18 @@ img.smlogo {
       float: left;
       width: 55px; }
     .button .buttontext {
-      padding: 12px 12px 7px 0px;
+      padding: 21px 12px 5px 0px;
       color: #fff;
       float: left;
       font-size: 3.6rem; }
+    .button .downloadicon {
+      margin: 22px 13px 4px 13px; }
 
   #slide9 {
     height: 600px; }
     #slide9 .mailicon {
-      width: 70px; }
+      width: 70px;
+      margin: 22px 13px 4px 13px; }
 
   ul {
     margin-bottom: 0px;
