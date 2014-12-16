@@ -161,12 +161,14 @@ header {
       line-height: 7.0rem; }
       header ul li a {
         color: #fff;
-        text-decoration: none; }
+        text-decoration: none;
+        border: 0px;
+        border-bottom: 2px;
+        border-bottom-color: #ffffff;
+        border-style: solid; }
         header ul li a:hover {
-          border: 0px;
-          border-bottom: 2px;
-          border-bottom-color: #ffffff;
-          border-style: solid; }
+          color: #00CDBD;
+          border-color: #00CDBD; }
 
 .navbarlogo img {
   float: left;
@@ -222,7 +224,7 @@ header {
   padding-top: 120px; }
 
 #slide2 {
-  height: 570px;
+  height: 620px;
   background: #F2F8FC;
   background-attachment: fixed; }
 
@@ -258,7 +260,7 @@ header {
 #slide5 {
   background: #FEF7E7;
   background-attachment: fixed;
-  height: 1060px; }
+  height: 1070px; }
   #slide5 h1 {
     padding-bottom: 10px; }
   #slide5 h2 {
@@ -354,15 +356,53 @@ img.smlogo {
           border-color: #00CDBD; }
 
 /*--------- Media Queries ----------*/
+@media (max-width: 700px) {
+  #slide1 {
+    height: 530px; }
+
+  #slide2 {
+    height: 660px; }
+
+  #slide5 {
+    height: 1280px; }
+
+  #slide6 {
+    height: 890px; }
+
+  #slide7 p {
+    width: 54%; }
+
+  #slide9 {
+    height: 320px; }
+
+  .footer-col-3 {
+    width: 47.88% !important; }
+
+  .vhlogo {
+    width: 100px;
+    padding-top: 45px; }
+
+  .aologo {
+    width: 100px; }
+
+  #title {
+    background-position-x: 50%;
+    background-size: 110%; } }
 @media (min-width: 700px) and (max-width: 870px) {
   #slide1 {
     height: 430px; }
 
   #slide2 {
-    height: 730px; }
+    height: 620px; }
+
+  #slide5 {
+    height: 1100px; }
 
   #slide6 {
     height: 890px; }
+
+  #slide7 p {
+    width: 54%; }
 
   #slide9 {
     height: 320px; }

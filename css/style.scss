@@ -194,11 +194,13 @@ header {
 			a{
 				color: #fff;
 				text-decoration: none;
+				border: 0px;
+				border-bottom: 2px;
+				border-bottom-color: #ffffff;
+				border-style: solid;
 				&:hover {
-					border: 0px;
-					border-bottom: 2px;
-					border-bottom-color: #ffffff;
-					border-style: solid;
+					color: $bt-green;
+					border-color: $bt-green;
 				}
 			}
 		}
@@ -270,7 +272,7 @@ header {
 }
 
 #slide2 {
-	height: 570px;
+	height: 620px;
 	background: $bk-ltblue;
 	background-attachment: fixed;
 }
@@ -310,7 +312,7 @@ header {
 #slide5 {
 	background: #FEF7E7;
 	background-attachment: fixed;
-	height: 1060px;
+	height: 1070px;
 	h1 {
 		padding-bottom: 10px;
 	}
@@ -421,15 +423,55 @@ img.smlogo {
 }
 
 /*--------- Media Queries ----------*/
+@media (max-width: 700px) {
+	#slide1 {
+		height: 530px;
+	}
+	#slide2 {
+		height: 660px;
+	}
+	#slide5 {
+		height: 1280px;
+	}
+	#slide6 {
+		height: 890px;
+	}
+	#slide7 p {
+		width: 54%;
+	}
+	#slide9 {
+		height: 320px;
+	}
+	.footer-col-3 {
+		width:47.88%!important;
+	}
+	.vhlogo {
+		width: 100px;
+		padding-top: 45px;
+	}
+	.aologo {
+		width: 100px;
+	}
+	#title {
+		background-position-x: 50%;
+		background-size: 110%;
+	}
+}
 @media (min-width: 700px) and (max-width: 870px){
 	#slide1 {
 		height: 430px;
 	}
 	#slide2 {
-		height: 730px;
+		height: 620px;
+	}
+	#slide5 {
+		height: 1100px;
 	}
 	#slide6 {
 		height: 890px;
+	}
+	#slide7 p {
+		width: 54%;
 	}
 	#slide9 {
 		height: 320px;
