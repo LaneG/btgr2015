@@ -341,8 +341,8 @@ img.smlogo {
         color: #fff;
         text-decoration: none;
         border: 0px;
-        border-bottom: 2px;
-        padding-bottom: 2px;
+        border-bottom: 1px;
+        padding-bottom: 1px;
         border-style: solid; }
         #slide9 ul li a:hover {
           color: #00CDBD;
