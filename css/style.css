@@ -224,7 +224,7 @@ header {
   padding-top: 120px; }
 
 #slide2 {
-  height: 620px;
+  height: 940px;
   background: #F2F8FC;
   background-attachment: fixed; }
 
@@ -264,15 +264,15 @@ header {
 
 #slide5 {
   background: #FEF7E7;
-  background-attachment: fixed;
-  height: 1070px; }
+  height: 1350px;
+  }
   #slide5 h1 {
     padding-bottom: 10px; }
   #slide5 h2 {
     padding-top: 20px; }
 
 #slide6 {
-  height: 820px; }
+  height: 930px; }
   #slide6 :before {
     background: #fff;
     transform: translateZ(-1px) scale(2);
@@ -312,6 +312,59 @@ img.smlogo {
     display: inline-block;
     width: 58%;
     margin: 0 1.06%; }
+
+#slide8 {
+  background-image: url('../images/footer.jpg');
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+#slide8-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #2881c7;
+  opacity: 0.6;
+}
+
+#slide8 .container {
+  position: relative;
+  z-index: 1000;
+  padding-top: 120px;
+  color: white;
+}
+
+#slide8 h1 {
+  color: white;
+  text-align: center;
+  font-size: 5em;
+}
+
+#slide8 p {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  max-width: 600px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#slide8 .registerbutton {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  padding: 0.66em 1em 0.5em 1em;
+  margin-top: 1em;
+  text-align: center;
+  background: #FAB516;
+  color: white;
+  text-decoration: none;
+  font-family: 'Bebas';
+  font-size: 4rem;
+  font-weight: bold;
+}
 
 .downloadicon {
   margin: 13px 13px 13px 13px; }
@@ -384,7 +437,7 @@ img.smlogo {
     height: 1280px; }
 
   #slide6 {
-    height: 890px; }
+    height: 920px; }
 
   #slide7 p {
     width: 54%; }
@@ -410,7 +463,7 @@ img.smlogo {
     height: 1100px; }
 
   #slide6 {
-    height: 890px; }
+    height: 920px; }
 
   #slide7 p {
     width: 54%; }
@@ -524,7 +577,7 @@ img.smlogo {
     height: 3770px; }
 
   #slide6 {
-    height: 2060px; }
+    height: 2200px; }
 
   #slide7 p {
     width: 100%; }
@@ -582,3 +635,22 @@ img.smlogo {
 @media (min-width: 1301px) {
   #title {
     background-position: 30% -240px; } }
+
+/*conf committee styles*/
+
+.committee {
+  width: 20%;
+  padding-top: 30px;
+  float: left;
+}
+
+.committee img {
+  width: 90%;
+  margin-left: auto;
+  margin-right: 
+}
+
+.committee p {
+  text-align: center;
+}
+
