@@ -1,3 +1,28 @@
+#code-of-conduct {
+  display: none;
+  width: 80%;
+  background: white;
+  clear: both;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  margin-top: 40px;
+  position: relative;
+}
+
+#close-coc {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #00CDBD;
+  font-size: 2em;
+  cursor: pointer;
+}
+.clearfix {
+  clear: both;
+}
+
 @font-face {
   font-family: 'Bebas';
   src: url("fonts/bebas/BebasNeue_Regular.otf") format("truetype"); }
@@ -177,8 +202,10 @@ header {
 
 /*---------   Slides   ---------*/
 .slide {
-  position: relative;
+  clear: both;
+
   padding: 60px 10%;
+  padding-bottom: 60px;
   width: 100%;
   box-sizing: border-box; }
 
@@ -392,12 +419,14 @@ img.smlogo {
 #slide9 {
   background: #2881c7;
   color: #fff;
-  height: 250px; }
+
+  }
   #slide9 .footertitle {
     font-size: 2.4rem; }
   #slide9 ul {
     margin: 0;
     padding: 0;
+    padding-bottom: 40px;
     list-style-type: none; }
     #slide9 ul li {
       font-size: 1.4rem;
@@ -442,9 +471,6 @@ img.smlogo {
   #slide7 p {
     width: 54%; }
 
-  #slide9 {
-    height: 320px; }
-
   .footer-col-3 {
     width: 47.88% !important; }
 
@@ -468,8 +494,6 @@ img.smlogo {
   #slide7 p {
     width: 54%; }
 
-  #slide9 {
-    height: 320px; }
 
   .footer-col-3 {
     width: 22% !important; }
@@ -550,7 +574,7 @@ img.smlogo {
     width: 390px; }
 
   .slide {
-    position: relative;
+    clear: both; 
     padding: 130px 10%;
     width: 100%;
     box-sizing: border-box;
@@ -615,8 +639,6 @@ img.smlogo {
     .button .downloadicon {
       margin: 22px 13px 4px 13px; }
 
-  #slide9 {
-    height: 600px; }
     #slide9 .mailicon {
       width: 70px;
       margin: 22px 13px 4px 13px; }
@@ -654,3 +676,39 @@ img.smlogo {
   text-align: center;
 }
 
+
+/*-----speakers ---------*/
+
+#speakers {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+#speakers h3 {
+  text-align: center;
+  padding-top: 30px;
+  line-height: 2.2rem;
+}
+
+#speakers small {
+  text-align: center;
+  display: block;
+  font-size: 14px;
+}
+
+#speakers .speaker {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  float: left;
+  box-sizing: border-box;
+}
+
+.speaker-photo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 90%;
+  border-radius: 50%;
+}
