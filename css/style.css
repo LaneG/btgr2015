@@ -1,3 +1,5 @@
+
+
 #code-of-conduct {
   display: none;
   width: 80%;
@@ -322,8 +324,10 @@ header {
   height: 140px; }
 
 img.smlogo {
-  width: 75%;
-  margin: 0 28%; }
+  width: 140px;
+  margin-left: 20px;
+  margin-right: 20px;
+  }
 
 .vhlogo {
   padding-top: 53px; }
