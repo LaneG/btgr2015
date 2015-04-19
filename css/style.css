@@ -472,6 +472,17 @@ img.smlogo {
   #slide6 {
     height: 920px; }
 
+  a#location-link {
+      display: none;
+  }
+
+  a#sponsors-link {
+      display: none;
+  }
+
+  a#schedule-link{
+      display: none;
+  }
   #slide7 p {
     width: 54%; }
 
